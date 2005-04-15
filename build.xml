@@ -23,10 +23,10 @@
 // CALIFORNIA HAS NO OBLIGATIONS TO PROVIDE MAINTENANCE, SUPPORT,
 // UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
 
-This is the build file for building the Norwegian Bokmål localization
+This is the build file for building the Norwegian Bokmal localization
 for ArgoUML.
 
-To be able to run ArgoUML in Norwegian Bokmål (with the ant run) you
+To be able to run ArgoUML in Norwegian Bokmal (with the ant run) you
 need to have argouml checked out alongside this directory and built
 using the package target or downloaded a release and unpacked in a
 directory argouml/build alongside this one. Like this:
@@ -38,8 +38,8 @@ argouml/build/log4j.jar
 etc.
   -->
 
-<project basedir="." default="compile"
-         name="ArgoUML Norwegian Bokmål localization">
+<project basedir="." default="run"
+         name="ArgoUML Norwegian Bokmal localization">
   <!-- =================================================================== -->
   <!-- Initialization target                                               -->
   <!-- =================================================================== -->
@@ -53,7 +53,7 @@ etc.
     <property name="argo.root.dir" value="../argouml"/>
     <property name="argo.build.dir" value="${argo.root.dir}/build"/>
 
-    <property name="result.jar" value="argouml-i18n-zh.jar"/>
+    <property name="result.jar" value="argouml-i18n-nb.jar"/>
   
     <path id="run.classpath">
       <fileset dir="${argo.build.dir}" includes="*.jar"/>
