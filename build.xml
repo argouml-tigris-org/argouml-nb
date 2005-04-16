@@ -63,7 +63,7 @@ etc.
   <!-- =================================================================== -->
   <!-- Run from classes                                                    -->
   <!-- =================================================================== -->
-  <target name="run" depends="init"
+  <target name="run" depends="init,jar"
           description="Run with this module.">
     <java classname="org.argouml.application.Main"
           fork="yes"
